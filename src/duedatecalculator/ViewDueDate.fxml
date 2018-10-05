@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="anchor" fx:id="anchor" prefHeight="220.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="duedatecalculator.ViewDueDateController">
+    <children>
+      <Pane id="basePane" fx:id="basePane" prefHeight="220.0" prefWidth="320.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button id="currTimeButton" fx:id="currTimeButton" contentDisplay="CENTER" layoutX="192.0" layoutY="178.0" mnemonicParsing="false" onAction="#currTimeButton" text="Set" />
+            <TextField id="inputDateLabel" fx:id="inputDateLabel" alignment="CENTER" layoutX="60.0" layoutY="54.0" prefHeight="25.0" prefWidth="132.0" />
+            <HBox layoutX="218.0" layoutY="52.0" spacing="15.0">
+               <children>
+                  <TextField id="turnDayLabel" fx:id="turnDayLabel" alignment="BOTTOM_LEFT" layoutX="208.0" layoutY="54.0" prefHeight="25.0" prefWidth="30.0" />
+                  <TextField id="turnHourLabel" fx:id="turnHourLabel" alignment="BOTTOM_LEFT" layoutX="241.0" layoutY="52.0" prefHeight="25.0" prefWidth="30.0" />
+                  <TextField id="turnMinLabel" fx:id="turnMinLabel" alignment="BOTTOM_LEFT" layoutX="280.0" layoutY="52.0" prefHeight="25.0" prefWidth="30.0" />
+               </children>
+            </HBox>
+              <Button id="submitButton" fx:id="submitButton" alignment="CENTER" layoutX="64.0" layoutY="85.0" onAction="#calculateButton" text="Submit request date" />
+            <Label id="currDateLabel" fx:id="currDateLabel" alignment="CENTER" layoutX="59.0" layoutY="182.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="132.0" />
+              <Label id="resultDateLabel" fx:id="resultDateLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="57.0" layoutY="135.0" minHeight="16" minWidth="69" prefHeight="17.0" prefWidth="132.0" textFill="#1500ff" />
+            <HBox layoutX="220.0" layoutY="34.0" spacing="25.0">
+               <children>
+                  <Text layoutX="211.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="day" />
+                  <Text layoutX="244.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hour" />
+                  <Text layoutX="283.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="min" />
+               </children>
+            </HBox>
+            <Text layoutX="59.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter time of request:">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font></Text>
+            <Text layoutX="90.0" layoutY="178.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Current time:" />
+            <Text fill="#0004ff" layoutX="67.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calculated due date:">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Text>
+            <Text layoutX="49.0" layoutY="47.0" strokeType="OUTSIDE" strokeWidth="0.0" text="(format: 2018.09.20. 13:45" />
+            <Text layoutX="224.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Turnaround time " wrappingWidth="105.0" />
+         </children>
+      </Pane>
+    </children>
+</AnchorPane>
